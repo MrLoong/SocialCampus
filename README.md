@@ -1,4 +1,2 @@
 # SocialCampus
 
-
-ddddd
