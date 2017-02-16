@@ -1,0 +1,984 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55FA9613F7A67A6E72743175 /* libPods-SocialCampus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A28C364D61863CC94B674F1 /* libPods-SocialCampus.a */; };
+		6C10E1A21DD1BCCD00922C11 /* SCServiceEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C10E1A11DD1BCCD00922C11 /* SCServiceEngine.m */; };
+		6C10E1A81DD1E5E300922C11 /* SCServiceSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C10E1A71DD1E5E300922C11 /* SCServiceSelector.m */; };
+		6C10E1AC1DD1EC7F00922C11 /* SCAccountService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C10E1AB1DD1EC7F00922C11 /* SCAccountService.m */; };
+		6C1936461DC98658004E017E /* SCMobileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1936451DC98657004E017E /* SCMobileView.m */; };
+		6C1D8C1F1DB89CF90033881B /* SCMobileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D8C1E1DB89CF90033881B /* SCMobileViewController.m */; };
+		6C1D8C231DB8A4500033881B /* SCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D8C221DB8A4500033881B /* SCNavigationController.m */; };
+		6C1D8C261DBA2B750033881B /* SCNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D8C251DBA2B750033881B /* SCNavigationBar.m */; };
+		6C3B90B71DD46399000E01B8 /* SCMessageFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3B90B61DD46399000E01B8 /* SCMessageFactory.m */; };
+		6C613FE31DCF01B200E9C93F /* SCServiceMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C613FE21DCF01B200E9C93F /* SCServiceMessage.m */; };
+		6C6963171E0164A6001C5CB4 /* SCHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6963161E0164A6001C5CB4 /* SCHttpRequest.m */; };
+		6C69631C1E016C06001C5CB4 /* SCNetworkPortal.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C69631B1E016C06001C5CB4 /* SCNetworkPortal.m */; };
+		6C95836E1DBC7420007C4298 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C95836D1DBC7420007C4298 /* UIColor+HexString.m */; };
+		6C9583711DBE5B60007C4298 /* SCUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9583701DBE5B60007C4298 /* SCUIViewController.m */; };
+		6C9583771DBE5D48007C4298 /* icon_back_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9583731DBE5D48007C4298 /* icon_back_normal@2x.png */; };
+		6C9583781DBE5D48007C4298 /* icon_back_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9583741DBE5D48007C4298 /* icon_back_normal@3x.png */; };
+		6C9583791DBE5D48007C4298 /* icon_back_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9583751DBE5D48007C4298 /* icon_back_press@2x.png */; };
+		6C95837A1DBE5D48007C4298 /* icon_back_press@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9583761DBE5D48007C4298 /* icon_back_press@3x.png */; };
+		6C9583861DBF12F2007C4298 /* login_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9583841DBF12F2007C4298 /* login_bg@2x.png */; };
+		6C9583871DBF12F2007C4298 /* login_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9583851DBF12F2007C4298 /* login_bg@3x.png */; };
+		6C9583921DBF35B3007C4298 /* SCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9583911DBF35B3007C4298 /* SCTextField.m */; };
+		6C9583951DBF56C2007C4298 /* icon_user_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9583931DBF56C2007C4298 /* icon_user_press@2x.png */; };
+		6C9583961DBF56C2007C4298 /* icon_user_press@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9583941DBF56C2007C4298 /* icon_user_press@3x.png */; };
+		6C9583981DBF56EB007C4298 /* icon_user_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C9583971DBF56EB007C4298 /* icon_user_normal@3x.png */; };
+		6C95839C1DBF5DE7007C4298 /* user_password.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C95839B1DBF5DE7007C4298 /* user_password.png */; };
+		6C9583A01DC1E8F9007C4298 /* UIView+ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C95839F1DC1E8F8007C4298 /* UIView+ViewUtils.m */; };
+		6CA3304A1DDC4A11000B0218 /* SCServiceTerminal.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA330491DDC4A11000B0218 /* SCServiceTerminal.m */; };
+		C0733B161E5593D9002BABFB /* SCRequestCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C0733B151E5593D9002BABFB /* SCRequestCenter.m */; };
+		C0826A3F1E558CAB002F01FE /* SCHttpRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C0826A3E1E558CAB002F01FE /* SCHttpRequestOperation.m */; };
+		FC2B74161DB7969900708EFB /* SCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2B74151DB7969900708EFB /* SCLoginViewController.m */; };
+		FC5F28E51DB74E9000F58267 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5F28E41DB74E9000F58267 /* main.m */; };
+		FC5F28E81DB74E9000F58267 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5F28E71DB74E9000F58267 /* AppDelegate.m */; };
+		FC5F28EB1DB74E9000F58267 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5F28EA1DB74E9000F58267 /* ViewController.m */; };
+		FC5F28EE1DB74E9000F58267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5F28EC1DB74E9000F58267 /* Main.storyboard */; };
+		FC5F28F11DB74E9000F58267 /* SocialCampus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC5F28EF1DB74E9000F58267 /* SocialCampus.xcdatamodeld */; };
+		FC5F28F31DB74E9000F58267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5F28F21DB74E9000F58267 /* Assets.xcassets */; };
+		FC5F28F61DB74E9000F58267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5F28F41DB74E9000F58267 /* LaunchScreen.storyboard */; };
+		FC5F29011DB74E9000F58267 /* SocialCampusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5F29001DB74E9000F58267 /* SocialCampusTests.m */; };
+		FC5F290C1DB74E9000F58267 /* SocialCampusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5F290B1DB74E9000F58267 /* SocialCampusUITests.m */; };
+		FC5F29211DB7524800F58267 /* SCMainWindowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5F29201DB7524800F58267 /* SCMainWindowManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC5F28FD1DB74E9000F58267 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC5F28D81DB74E9000F58267 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC5F28DF1DB74E9000F58267;
+			remoteInfo = SocialCampus;
+		};
+		FC5F29081DB74E9000F58267 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC5F28D81DB74E9000F58267 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC5F28DF1DB74E9000F58267;
+			remoteInfo = SocialCampus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00837717FB2221BE6FB90B80 /* Pods-SocialCampus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialCampus.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialCampus/Pods-SocialCampus.release.xcconfig"; sourceTree = "<group>"; };
+		0A28C364D61863CC94B674F1 /* libPods-SocialCampus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialCampus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C10E1A01DD1BCCD00922C11 /* SCServiceEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCServiceEngine.h; path = Classes/ServiceDistribution/Distribution/SCServiceEngine.h; sourceTree = "<group>"; };
+		6C10E1A11DD1BCCD00922C11 /* SCServiceEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCServiceEngine.m; path = Classes/ServiceDistribution/Distribution/SCServiceEngine.m; sourceTree = "<group>"; };
+		6C10E1A61DD1E5E300922C11 /* SCServiceSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCServiceSelector.h; path = Classes/ServiceDistribution/Distribution/SCServiceSelector.h; sourceTree = "<group>"; };
+		6C10E1A71DD1E5E300922C11 /* SCServiceSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCServiceSelector.m; path = Classes/ServiceDistribution/Distribution/SCServiceSelector.m; sourceTree = "<group>"; };
+		6C10E1AA1DD1EC7F00922C11 /* SCAccountService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCAccountService.h; path = Classes/ServiceDistribution/Service/SCAccountService.h; sourceTree = "<group>"; };
+		6C10E1AB1DD1EC7F00922C11 /* SCAccountService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCAccountService.m; path = Classes/ServiceDistribution/Service/SCAccountService.m; sourceTree = "<group>"; };
+		6C1936441DC98657004E017E /* SCMobileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCMobileView.h; path = Classes/UI/Login/View/SCMobileView.h; sourceTree = "<group>"; };
+		6C1936451DC98657004E017E /* SCMobileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCMobileView.m; path = Classes/UI/Login/View/SCMobileView.m; sourceTree = "<group>"; };
+		6C1D8C1D1DB89CF90033881B /* SCMobileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCMobileViewController.h; path = Classes/UI/Login/Controller/SCMobileViewController.h; sourceTree = "<group>"; };
+		6C1D8C1E1DB89CF90033881B /* SCMobileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCMobileViewController.m; path = Classes/UI/Login/Controller/SCMobileViewController.m; sourceTree = "<group>"; };
+		6C1D8C211DB8A4500033881B /* SCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCNavigationController.h; path = Classes/BaseUI/SCNavigationController.h; sourceTree = "<group>"; };
+		6C1D8C221DB8A4500033881B /* SCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCNavigationController.m; path = Classes/BaseUI/SCNavigationController.m; sourceTree = "<group>"; };
+		6C1D8C241DBA2B740033881B /* SCNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCNavigationBar.h; path = Classes/BaseUI/SCNavigationBar.h; sourceTree = "<group>"; };
+		6C1D8C251DBA2B750033881B /* SCNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCNavigationBar.m; path = Classes/BaseUI/SCNavigationBar.m; sourceTree = "<group>"; };
+		6C3B90B51DD46399000E01B8 /* SCMessageFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCMessageFactory.h; path = Classes/ServiceDistribution/Message/SCMessageFactory.h; sourceTree = "<group>"; };
+		6C3B90B61DD46399000E01B8 /* SCMessageFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCMessageFactory.m; path = Classes/ServiceDistribution/Message/SCMessageFactory.m; sourceTree = "<group>"; };
+		6C613FE11DCF01B200E9C93F /* SCServiceMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCServiceMessage.h; path = Classes/ServiceDistribution/Message/SCServiceMessage.h; sourceTree = "<group>"; };
+		6C613FE21DCF01B200E9C93F /* SCServiceMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCServiceMessage.m; path = Classes/ServiceDistribution/Message/SCServiceMessage.m; sourceTree = "<group>"; };
+		6C6963151E0164A6001C5CB4 /* SCHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHttpRequest.h; path = Classes/NetWork/SCHttpRequest.h; sourceTree = "<group>"; };
+		6C6963161E0164A6001C5CB4 /* SCHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHttpRequest.m; path = Classes/NetWork/SCHttpRequest.m; sourceTree = "<group>"; };
+		6C69631A1E016C05001C5CB4 /* SCNetworkPortal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCNetworkPortal.h; path = Classes/ServiceDistribution/NetworkPortal/SCNetworkPortal.h; sourceTree = "<group>"; };
+		6C69631B1E016C06001C5CB4 /* SCNetworkPortal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCNetworkPortal.m; path = Classes/ServiceDistribution/NetworkPortal/SCNetworkPortal.m; sourceTree = "<group>"; };
+		6C95836C1DBC7420007C4298 /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+HexString.h"; path = "Classes/Category/UIColor/UIColor+HexString.h"; sourceTree = "<group>"; };
+		6C95836D1DBC7420007C4298 /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexString.m"; path = "Classes/Category/UIColor/UIColor+HexString.m"; sourceTree = "<group>"; };
+		6C95836F1DBE5B60007C4298 /* SCUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCUIViewController.h; path = Classes/BaseUI/SCUIViewController.h; sourceTree = "<group>"; };
+		6C9583701DBE5B60007C4298 /* SCUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCUIViewController.m; path = Classes/BaseUI/SCUIViewController.m; sourceTree = "<group>"; };
+		6C9583731DBE5D48007C4298 /* icon_back_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_back_normal@2x.png"; path = "Resource/BaseUI/icon_back_normal@2x.png"; sourceTree = "<group>"; };
+		6C9583741DBE5D48007C4298 /* icon_back_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_back_normal@3x.png"; path = "Resource/BaseUI/icon_back_normal@3x.png"; sourceTree = "<group>"; };
+		6C9583751DBE5D48007C4298 /* icon_back_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_back_press@2x.png"; path = "Resource/BaseUI/icon_back_press@2x.png"; sourceTree = "<group>"; };
+		6C9583761DBE5D48007C4298 /* icon_back_press@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_back_press@3x.png"; path = "Resource/BaseUI/icon_back_press@3x.png"; sourceTree = "<group>"; };
+		6C9583841DBF12F2007C4298 /* login_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "login_bg@2x.png"; path = "Resource/Login/login_bg@2x.png"; sourceTree = "<group>"; };
+		6C9583851DBF12F2007C4298 /* login_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "login_bg@3x.png"; path = "Resource/Login/login_bg@3x.png"; sourceTree = "<group>"; };
+		6C9583901DBF35B3007C4298 /* SCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCTextField.h; path = Classes/UI/Login/View/SCTextField.h; sourceTree = "<group>"; };
+		6C9583911DBF35B3007C4298 /* SCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCTextField.m; path = Classes/UI/Login/View/SCTextField.m; sourceTree = "<group>"; };
+		6C9583931DBF56C2007C4298 /* icon_user_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_user_press@2x.png"; path = "Resource/Login/icon_user_press@2x.png"; sourceTree = "<group>"; };
+		6C9583941DBF56C2007C4298 /* icon_user_press@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_user_press@3x.png"; path = "Resource/Login/icon_user_press@3x.png"; sourceTree = "<group>"; };
+		6C9583971DBF56EB007C4298 /* icon_user_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_user_normal@3x.png"; path = "Resource/Login/icon_user_normal@3x.png"; sourceTree = "<group>"; };
+		6C95839B1DBF5DE7007C4298 /* user_password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user_password.png; path = Resource/Login/user_password.png; sourceTree = "<group>"; };
+		6C95839E1DC1E8F8007C4298 /* UIView+ViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+ViewUtils.h"; path = "Classes/Category/UIView/UIView+ViewUtils.h"; sourceTree = "<group>"; };
+		6C95839F1DC1E8F8007C4298 /* UIView+ViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+ViewUtils.m"; path = "Classes/Category/UIView/UIView+ViewUtils.m"; sourceTree = "<group>"; };
+		6CA330481DDC4A11000B0218 /* SCServiceTerminal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCServiceTerminal.h; path = Classes/ServiceDistribution/Request/SCServiceTerminal.h; sourceTree = "<group>"; };
+		6CA330491DDC4A11000B0218 /* SCServiceTerminal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCServiceTerminal.m; path = Classes/ServiceDistribution/Request/SCServiceTerminal.m; sourceTree = "<group>"; };
+		6CA3304B1DDC4E1D000B0218 /* SCServiceCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SCServiceCommand.h; path = Classes/ServiceDistribution/Request/SCServiceCommand.h; sourceTree = "<group>"; };
+		C0733B141E5593D9002BABFB /* SCRequestCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCRequestCenter.h; path = Classes/NetWork/SCRequestCenter.h; sourceTree = "<group>"; };
+		C0733B151E5593D9002BABFB /* SCRequestCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCRequestCenter.m; path = Classes/NetWork/SCRequestCenter.m; sourceTree = "<group>"; };
+		C0826A3D1E558CAB002F01FE /* SCHttpRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHttpRequestOperation.h; path = Classes/NetWork/SCHttpRequestOperation.h; sourceTree = "<group>"; };
+		C0826A3E1E558CAB002F01FE /* SCHttpRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHttpRequestOperation.m; path = Classes/NetWork/SCHttpRequestOperation.m; sourceTree = "<group>"; };
+		C9E6BB3CF4F9A60D991DAC58 /* Pods-SocialCampus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialCampus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialCampus/Pods-SocialCampus.debug.xcconfig"; sourceTree = "<group>"; };
+		FC2B74141DB7969900708EFB /* SCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCLoginViewController.h; path = Classes/UI/Login/Controller/SCLoginViewController.h; sourceTree = "<group>"; };
+		FC2B74151DB7969900708EFB /* SCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCLoginViewController.m; path = Classes/UI/Login/Controller/SCLoginViewController.m; sourceTree = "<group>"; };
+		FC5F28E01DB74E9000F58267 /* SocialCampus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialCampus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC5F28E41DB74E9000F58267 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC5F28E61DB74E9000F58267 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC5F28E71DB74E9000F58267 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC5F28E91DB74E9000F58267 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC5F28EA1DB74E9000F58267 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC5F28ED1DB74E9000F58267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC5F28F01DB74E9000F58267 /* SocialCampus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SocialCampus.xcdatamodel; sourceTree = "<group>"; };
+		FC5F28F21DB74E9000F58267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC5F28F51DB74E9000F58267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC5F28F71DB74E9000F58267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC5F28FC1DB74E9000F58267 /* SocialCampusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialCampusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC5F29001DB74E9000F58267 /* SocialCampusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialCampusTests.m; sourceTree = "<group>"; };
+		FC5F29021DB74E9000F58267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC5F29071DB74E9000F58267 /* SocialCampusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialCampusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC5F290B1DB74E9000F58267 /* SocialCampusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialCampusUITests.m; sourceTree = "<group>"; };
+		FC5F290D1DB74E9000F58267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC5F291F1DB7524800F58267 /* SCMainWindowManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCMainWindowManager.h; path = Classes/Manager/MainWindow/SCMainWindowManager.h; sourceTree = "<group>"; };
+		FC5F29201DB7524800F58267 /* SCMainWindowManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCMainWindowManager.m; path = Classes/Manager/MainWindow/SCMainWindowManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC5F28DD1DB74E9000F58267 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55FA9613F7A67A6E72743175 /* libPods-SocialCampus.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC5F28F91DB74E9000F58267 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC5F29041DB74E9000F58267 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C10E19F1DD1B82300922C11 /* Distribution */ = {
+			isa = PBXGroup;
+			children = (
+				6C10E1A01DD1BCCD00922C11 /* SCServiceEngine.h */,
+				6C10E1A11DD1BCCD00922C11 /* SCServiceEngine.m */,
+				6C10E1A61DD1E5E300922C11 /* SCServiceSelector.h */,
+				6C10E1A71DD1E5E300922C11 /* SCServiceSelector.m */,
+			);
+			name = Distribution;
+			sourceTree = "<group>";
+		};
+		6C10E1A91DD1E95E00922C11 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6C10E1AA1DD1EC7F00922C11 /* SCAccountService.h */,
+				6C10E1AB1DD1EC7F00922C11 /* SCAccountService.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		6C1D8C1C1DB896B60033881B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C9583901DBF35B3007C4298 /* SCTextField.h */,
+				6C9583911DBF35B3007C4298 /* SCTextField.m */,
+				6C1936441DC98657004E017E /* SCMobileView.h */,
+				6C1936451DC98657004E017E /* SCMobileView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6C1D8C201DB8A3C60033881B /* BaseUI */ = {
+			isa = PBXGroup;
+			children = (
+				6C1D8C211DB8A4500033881B /* SCNavigationController.h */,
+				6C1D8C221DB8A4500033881B /* SCNavigationController.m */,
+				6C1D8C241DBA2B740033881B /* SCNavigationBar.h */,
+				6C1D8C251DBA2B750033881B /* SCNavigationBar.m */,
+				6C95836F1DBE5B60007C4298 /* SCUIViewController.h */,
+				6C9583701DBE5B60007C4298 /* SCUIViewController.m */,
+			);
+			name = BaseUI;
+			sourceTree = "<group>";
+		};
+		6C613FDF1DCF007700E9C93F /* ServiceDistribution */ = {
+			isa = PBXGroup;
+			children = (
+				6C6963191E016BAB001C5CB4 /* NetworkPortal */,
+				6CA330471DDC49C2000B0218 /* Request */,
+				6C10E19F1DD1B82300922C11 /* Distribution */,
+				6C613FE01DCF00C800E9C93F /* Message */,
+				6C10E1A91DD1E95E00922C11 /* Service */,
+			);
+			name = ServiceDistribution;
+			sourceTree = "<group>";
+		};
+		6C613FE01DCF00C800E9C93F /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				6C613FE11DCF01B200E9C93F /* SCServiceMessage.h */,
+				6C613FE21DCF01B200E9C93F /* SCServiceMessage.m */,
+				6C3B90B51DD46399000E01B8 /* SCMessageFactory.h */,
+				6C3B90B61DD46399000E01B8 /* SCMessageFactory.m */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		6C6963141E016449001C5CB4 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				6C6963151E0164A6001C5CB4 /* SCHttpRequest.h */,
+				6C6963161E0164A6001C5CB4 /* SCHttpRequest.m */,
+				C0826A3D1E558CAB002F01FE /* SCHttpRequestOperation.h */,
+				C0826A3E1E558CAB002F01FE /* SCHttpRequestOperation.m */,
+				C0733B141E5593D9002BABFB /* SCRequestCenter.h */,
+				C0733B151E5593D9002BABFB /* SCRequestCenter.m */,
+			);
+			name = NetWork;
+			sourceTree = "<group>";
+		};
+		6C6963191E016BAB001C5CB4 /* NetworkPortal */ = {
+			isa = PBXGroup;
+			children = (
+				6C69631A1E016C05001C5CB4 /* SCNetworkPortal.h */,
+				6C69631B1E016C06001C5CB4 /* SCNetworkPortal.m */,
+			);
+			name = NetworkPortal;
+			sourceTree = "<group>";
+		};
+		6C95836A1DBC738C007C4298 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6C95839D1DC1E857007C4298 /* UIView */,
+				6C95836B1DBC73AA007C4298 /* UIColor */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		6C95836B1DBC73AA007C4298 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				6C95836C1DBC7420007C4298 /* UIColor+HexString.h */,
+				6C95836D1DBC7420007C4298 /* UIColor+HexString.m */,
+			);
+			name = UIColor;
+			sourceTree = "<group>";
+		};
+		6C9583721DBE5D16007C4298 /* BaseUI */ = {
+			isa = PBXGroup;
+			children = (
+				6C9583731DBE5D48007C4298 /* icon_back_normal@2x.png */,
+				6C9583741DBE5D48007C4298 /* icon_back_normal@3x.png */,
+				6C9583751DBE5D48007C4298 /* icon_back_press@2x.png */,
+				6C9583761DBE5D48007C4298 /* icon_back_press@3x.png */,
+			);
+			name = BaseUI;
+			sourceTree = "<group>";
+		};
+		6C95837B1DBF0C72007C4298 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6C95839B1DBF5DE7007C4298 /* user_password.png */,
+				6C9583971DBF56EB007C4298 /* icon_user_normal@3x.png */,
+				6C9583931DBF56C2007C4298 /* icon_user_press@2x.png */,
+				6C9583941DBF56C2007C4298 /* icon_user_press@3x.png */,
+				6C9583841DBF12F2007C4298 /* login_bg@2x.png */,
+				6C9583851DBF12F2007C4298 /* login_bg@3x.png */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		6C95839D1DC1E857007C4298 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				6C95839E1DC1E8F8007C4298 /* UIView+ViewUtils.h */,
+				6C95839F1DC1E8F8007C4298 /* UIView+ViewUtils.m */,
+			);
+			name = UIView;
+			sourceTree = "<group>";
+		};
+		6CA330471DDC49C2000B0218 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				6CA330481DDC4A11000B0218 /* SCServiceTerminal.h */,
+				6CA330491DDC4A11000B0218 /* SCServiceTerminal.m */,
+				6CA3304B1DDC4E1D000B0218 /* SCServiceCommand.h */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		A393C9F9C933DB09BDB41782 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A28C364D61863CC94B674F1 /* libPods-SocialCampus.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A433B6204539B2439189BB64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9E6BB3CF4F9A60D991DAC58 /* Pods-SocialCampus.debug.xcconfig */,
+				00837717FB2221BE6FB90B80 /* Pods-SocialCampus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC2B74111DB78D0C00708EFB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FC2B74121DB78DCA00708EFB /* Login */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		FC2B74121DB78DCA00708EFB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6C1D8C1C1DB896B60033881B /* View */,
+				FC2B74131DB7964200708EFB /* Controller */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		FC2B74131DB7964200708EFB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC2B74141DB7969900708EFB /* SCLoginViewController.h */,
+				FC2B74151DB7969900708EFB /* SCLoginViewController.m */,
+				6C1D8C1D1DB89CF90033881B /* SCMobileViewController.h */,
+				6C1D8C1E1DB89CF90033881B /* SCMobileViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FC5F28D71DB74E9000F58267 = {
+			isa = PBXGroup;
+			children = (
+				FC5F28E21DB74E9000F58267 /* SocialCampus */,
+				FC5F28FF1DB74E9000F58267 /* SocialCampusTests */,
+				FC5F290A1DB74E9000F58267 /* SocialCampusUITests */,
+				FC5F28E11DB74E9000F58267 /* Products */,
+				A433B6204539B2439189BB64 /* Pods */,
+				A393C9F9C933DB09BDB41782 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC5F28E11DB74E9000F58267 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC5F28E01DB74E9000F58267 /* SocialCampus.app */,
+				FC5F28FC1DB74E9000F58267 /* SocialCampusTests.xctest */,
+				FC5F29071DB74E9000F58267 /* SocialCampusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC5F28E21DB74E9000F58267 /* SocialCampus */ = {
+			isa = PBXGroup;
+			children = (
+				FC5F29191DB74FC200F58267 /* Classes */,
+				FC5F291B1DB7502A00F58267 /* Libries */,
+				FC5F291A1DB74FD000F58267 /* Framework */,
+				FC5F291C1DB7504000F58267 /* Resource */,
+				FC5F28E31DB74E9000F58267 /* Supporting Files */,
+			);
+			path = SocialCampus;
+			sourceTree = "<group>";
+		};
+		FC5F28E31DB74E9000F58267 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC5F28E61DB74E9000F58267 /* AppDelegate.h */,
+				FC5F28E71DB74E9000F58267 /* AppDelegate.m */,
+				FC5F28E91DB74E9000F58267 /* ViewController.h */,
+				FC5F28EA1DB74E9000F58267 /* ViewController.m */,
+				FC5F28EC1DB74E9000F58267 /* Main.storyboard */,
+				FC5F28F21DB74E9000F58267 /* Assets.xcassets */,
+				FC5F28F41DB74E9000F58267 /* LaunchScreen.storyboard */,
+				FC5F28F71DB74E9000F58267 /* Info.plist */,
+				FC5F28EF1DB74E9000F58267 /* SocialCampus.xcdatamodeld */,
+				FC5F28E41DB74E9000F58267 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC5F28FF1DB74E9000F58267 /* SocialCampusTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC5F29001DB74E9000F58267 /* SocialCampusTests.m */,
+				FC5F29021DB74E9000F58267 /* Info.plist */,
+			);
+			path = SocialCampusTests;
+			sourceTree = "<group>";
+		};
+		FC5F290A1DB74E9000F58267 /* SocialCampusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC5F290B1DB74E9000F58267 /* SocialCampusUITests.m */,
+				FC5F290D1DB74E9000F58267 /* Info.plist */,
+			);
+			path = SocialCampusUITests;
+			sourceTree = "<group>";
+		};
+		FC5F29191DB74FC200F58267 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6C6963141E016449001C5CB4 /* NetWork */,
+				6C613FDF1DCF007700E9C93F /* ServiceDistribution */,
+				6C1D8C201DB8A3C60033881B /* BaseUI */,
+				FC2B74111DB78D0C00708EFB /* UI */,
+				FC5F291D1DB751CF00F58267 /* Manager */,
+				6C95836A1DBC738C007C4298 /* Category */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		FC5F291A1DB74FD000F58267 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		FC5F291B1DB7502A00F58267 /* Libries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libries;
+			sourceTree = "<group>";
+		};
+		FC5F291C1DB7504000F58267 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				6C95837B1DBF0C72007C4298 /* Login */,
+				6C9583721DBE5D16007C4298 /* BaseUI */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		FC5F291D1DB751CF00F58267 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FC5F291E1DB751FD00F58267 /* MainWindow */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		FC5F291E1DB751FD00F58267 /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				FC5F291F1DB7524800F58267 /* SCMainWindowManager.h */,
+				FC5F29201DB7524800F58267 /* SCMainWindowManager.m */,
+			);
+			name = MainWindow;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC5F28DF1DB74E9000F58267 /* SocialCampus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC5F29101DB74E9000F58267 /* Build configuration list for PBXNativeTarget "SocialCampus" */;
+			buildPhases = (
+				90639B4A9B5AB5300AADE2EE /* [CP] Check Pods Manifest.lock */,
+				FC5F28DC1DB74E9000F58267 /* Sources */,
+				FC5F28DD1DB74E9000F58267 /* Frameworks */,
+				FC5F28DE1DB74E9000F58267 /* Resources */,
+				F3D3D4EA7C0E7E460AEDAFEE /* [CP] Embed Pods Frameworks */,
+				56F5480766DC4DF064931A46 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialCampus;
+			productName = SocialCampus;
+			productReference = FC5F28E01DB74E9000F58267 /* SocialCampus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC5F28FB1DB74E9000F58267 /* SocialCampusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC5F29131DB74E9000F58267 /* Build configuration list for PBXNativeTarget "SocialCampusTests" */;
+			buildPhases = (
+				FC5F28F81DB74E9000F58267 /* Sources */,
+				FC5F28F91DB74E9000F58267 /* Frameworks */,
+				FC5F28FA1DB74E9000F58267 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC5F28FE1DB74E9000F58267 /* PBXTargetDependency */,
+			);
+			name = SocialCampusTests;
+			productName = SocialCampusTests;
+			productReference = FC5F28FC1DB74E9000F58267 /* SocialCampusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC5F29061DB74E9000F58267 /* SocialCampusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC5F29161DB74E9000F58267 /* Build configuration list for PBXNativeTarget "SocialCampusUITests" */;
+			buildPhases = (
+				FC5F29031DB74E9000F58267 /* Sources */,
+				FC5F29041DB74E9000F58267 /* Frameworks */,
+				FC5F29051DB74E9000F58267 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC5F29091DB74E9000F58267 /* PBXTargetDependency */,
+			);
+			name = SocialCampusUITests;
+			productName = SocialCampusUITests;
+			productReference = FC5F29071DB74E9000F58267 /* SocialCampusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC5F28D81DB74E9000F58267 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = lastday;
+				TargetAttributes = {
+					FC5F28DF1DB74E9000F58267 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6S5JX9S9RN;
+						ProvisioningStyle = Manual;
+					};
+					FC5F28FB1DB74E9000F58267 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FC5F28DF1DB74E9000F58267;
+					};
+					FC5F29061DB74E9000F58267 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FC5F28DF1DB74E9000F58267;
+					};
+				};
+			};
+			buildConfigurationList = FC5F28DB1DB74E9000F58267 /* Build configuration list for PBXProject "SocialCampus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC5F28D71DB74E9000F58267;
+			productRefGroup = FC5F28E11DB74E9000F58267 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC5F28DF1DB74E9000F58267 /* SocialCampus */,
+				FC5F28FB1DB74E9000F58267 /* SocialCampusTests */,
+				FC5F29061DB74E9000F58267 /* SocialCampusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC5F28DE1DB74E9000F58267 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC5F28F61DB74E9000F58267 /* LaunchScreen.storyboard in Resources */,
+				6C9583771DBE5D48007C4298 /* icon_back_normal@2x.png in Resources */,
+				6C9583961DBF56C2007C4298 /* icon_user_press@3x.png in Resources */,
+				6C9583981DBF56EB007C4298 /* icon_user_normal@3x.png in Resources */,
+				6C9583871DBF12F2007C4298 /* login_bg@3x.png in Resources */,
+				6C9583951DBF56C2007C4298 /* icon_user_press@2x.png in Resources */,
+				6C9583791DBE5D48007C4298 /* icon_back_press@2x.png in Resources */,
+				6C9583781DBE5D48007C4298 /* icon_back_normal@3x.png in Resources */,
+				6C95839C1DBF5DE7007C4298 /* user_password.png in Resources */,
+				FC5F28F31DB74E9000F58267 /* Assets.xcassets in Resources */,
+				6C9583861DBF12F2007C4298 /* login_bg@2x.png in Resources */,
+				FC5F28EE1DB74E9000F58267 /* Main.storyboard in Resources */,
+				6C95837A1DBE5D48007C4298 /* icon_back_press@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC5F28FA1DB74E9000F58267 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC5F29051DB74E9000F58267 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56F5480766DC4DF064931A46 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialCampus/Pods-SocialCampus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90639B4A9B5AB5300AADE2EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F3D3D4EA7C0E7E460AEDAFEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialCampus/Pods-SocialCampus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC5F28DC1DB74E9000F58267 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C95836E1DBC7420007C4298 /* UIColor+HexString.m in Sources */,
+				FC5F28EB1DB74E9000F58267 /* ViewController.m in Sources */,
+				6C10E1AC1DD1EC7F00922C11 /* SCAccountService.m in Sources */,
+				6C9583A01DC1E8F9007C4298 /* UIView+ViewUtils.m in Sources */,
+				6C6963171E0164A6001C5CB4 /* SCHttpRequest.m in Sources */,
+				6C9583921DBF35B3007C4298 /* SCTextField.m in Sources */,
+				6C10E1A21DD1BCCD00922C11 /* SCServiceEngine.m in Sources */,
+				6CA3304A1DDC4A11000B0218 /* SCServiceTerminal.m in Sources */,
+				6C1936461DC98658004E017E /* SCMobileView.m in Sources */,
+				FC5F28F11DB74E9000F58267 /* SocialCampus.xcdatamodeld in Sources */,
+				6C1D8C1F1DB89CF90033881B /* SCMobileViewController.m in Sources */,
+				FC2B74161DB7969900708EFB /* SCLoginViewController.m in Sources */,
+				6C9583711DBE5B60007C4298 /* SCUIViewController.m in Sources */,
+				FC5F29211DB7524800F58267 /* SCMainWindowManager.m in Sources */,
+				C0826A3F1E558CAB002F01FE /* SCHttpRequestOperation.m in Sources */,
+				6C1D8C231DB8A4500033881B /* SCNavigationController.m in Sources */,
+				6C1D8C261DBA2B750033881B /* SCNavigationBar.m in Sources */,
+				6C69631C1E016C06001C5CB4 /* SCNetworkPortal.m in Sources */,
+				FC5F28E81DB74E9000F58267 /* AppDelegate.m in Sources */,
+				6C3B90B71DD46399000E01B8 /* SCMessageFactory.m in Sources */,
+				C0733B161E5593D9002BABFB /* SCRequestCenter.m in Sources */,
+				FC5F28E51DB74E9000F58267 /* main.m in Sources */,
+				6C10E1A81DD1E5E300922C11 /* SCServiceSelector.m in Sources */,
+				6C613FE31DCF01B200E9C93F /* SCServiceMessage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC5F28F81DB74E9000F58267 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC5F29011DB74E9000F58267 /* SocialCampusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC5F29031DB74E9000F58267 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC5F290C1DB74E9000F58267 /* SocialCampusUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC5F28FE1DB74E9000F58267 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC5F28DF1DB74E9000F58267 /* SocialCampus */;
+			targetProxy = FC5F28FD1DB74E9000F58267 /* PBXContainerItemProxy */;
+		};
+		FC5F29091DB74E9000F58267 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC5F28DF1DB74E9000F58267 /* SocialCampus */;
+			targetProxy = FC5F29081DB74E9000F58267 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC5F28EC1DB74E9000F58267 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC5F28ED1DB74E9000F58267 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC5F28F41DB74E9000F58267 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC5F28F51DB74E9000F58267 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC5F290E1DB74E9000F58267 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC5F290F1DB74E9000F58267 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC5F29111DB74E9000F58267 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9E6BB3CF4F9A60D991DAC58 /* Pods-SocialCampus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6S5JX9S9RN;
+				INFOPLIST_FILE = SocialCampus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ldjzhang.SocialCampus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "627cdfc4-8f7a-4896-8c72-053b8e1efcbb";
+				PROVISIONING_PROFILE_SPECIFIER = allenlin;
+			};
+			name = Debug;
+		};
+		FC5F29121DB74E9000F58267 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00837717FB2221BE6FB90B80 /* Pods-SocialCampus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6S5JX9S9RN;
+				INFOPLIST_FILE = SocialCampus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ldjzhang.SocialCampus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "627cdfc4-8f7a-4896-8c72-053b8e1efcbb";
+				PROVISIONING_PROFILE_SPECIFIER = allenlin;
+			};
+			name = Release;
+		};
+		FC5F29141DB74E9000F58267 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SocialCampusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ldjzhang.SocialCampusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialCampus.app/SocialCampus";
+			};
+			name = Debug;
+		};
+		FC5F29151DB74E9000F58267 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SocialCampusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ldjzhang.SocialCampusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialCampus.app/SocialCampus";
+			};
+			name = Release;
+		};
+		FC5F29171DB74E9000F58267 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SocialCampusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ldjzhang.SocialCampusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SocialCampus;
+			};
+			name = Debug;
+		};
+		FC5F29181DB74E9000F58267 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SocialCampusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ldjzhang.SocialCampusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SocialCampus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC5F28DB1DB74E9000F58267 /* Build configuration list for PBXProject "SocialCampus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC5F290E1DB74E9000F58267 /* Debug */,
+				FC5F290F1DB74E9000F58267 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC5F29101DB74E9000F58267 /* Build configuration list for PBXNativeTarget "SocialCampus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC5F29111DB74E9000F58267 /* Debug */,
+				FC5F29121DB74E9000F58267 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC5F29131DB74E9000F58267 /* Build configuration list for PBXNativeTarget "SocialCampusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC5F29141DB74E9000F58267 /* Debug */,
+				FC5F29151DB74E9000F58267 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC5F29161DB74E9000F58267 /* Build configuration list for PBXNativeTarget "SocialCampusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC5F29171DB74E9000F58267 /* Debug */,
+				FC5F29181DB74E9000F58267 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC5F28EF1DB74E9000F58267 /* SocialCampus.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC5F28F01DB74E9000F58267 /* SocialCampus.xcdatamodel */,
+			);
+			currentVersion = FC5F28F01DB74E9000F58267 /* SocialCampus.xcdatamodel */;
+			path = SocialCampus.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FC5F28D81DB74E9000F58267 /* Project object */;
+}
