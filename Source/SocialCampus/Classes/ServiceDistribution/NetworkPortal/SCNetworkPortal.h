@@ -17,7 +17,6 @@
 
 @interface SCNetworkPortal : NSObject
 
-
 +(void)requestWithSM:(SCServiceMessage *)serviceMessage
             delegate:(id<SCNetworkPortalDelegate>)delegate
              success:(void (^)(NSString *data,NSURLResponse *response))success

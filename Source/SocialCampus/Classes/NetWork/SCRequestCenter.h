@@ -20,7 +20,7 @@ typedef void(^RequestProgressBlock)(NSInteger alreadyReciveSize,NSInteger expect
 
 
 /**
-无参数block
+无参数block,用于创建
  */
 typedef void(^RequestCreateBlock)();
 
@@ -37,13 +37,13 @@ typedef void(^RequestFinishBlock)(NSData *data,NSError *error,BOOL finished);
 
 @interface SCRequestCenter : NSObject
 
-
-
 /**
  单例
 
  @return SCRequestCenter
  */
 +(instancetype)shareInstance;
+
+
 
 @end
