@@ -80,6 +80,9 @@
     [_finishBtn setTitleColor:[UIColor colorWithHexString:@"#fefefe"] forState:UIControlStateNormal];
     _finishBtn.enabled = NO;
     [self addSubview:_finishBtn];
+    
+    
+    
 }
 
 

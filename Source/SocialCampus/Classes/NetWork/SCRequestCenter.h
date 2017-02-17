@@ -8,6 +8,42 @@
 
 #import <Foundation/Foundation.h>
 
+
+#pragma mark - 请求状态block
+/**
+ 请求进度
+
+ @param alreadyReciveSize     已接收数据
+ @param expectedContentLength 未接受数据
+ */
+typedef void(^RequestProgressBlock)(NSInteger alreadyReciveSize,NSInteger expectedContentLength);
+
+
+/**
+无参数block
+ */
+typedef void(^RequestCreateBlock)();
+
+
+/**
+ 请求完成
+
+ @param data                  请求数据
+ @param error                 请求错误信息
+ @param finished              是否完成
+ */
+typedef void(^RequestFinishBlock)(NSData *data,NSError *error,BOOL finished);
+
+
 @interface SCRequestCenter : NSObject
+
+
+
+/**
+ 单例
+
+ @return SCRequestCenter
+ */
++(instancetype)shareInstance;
 
 @end
