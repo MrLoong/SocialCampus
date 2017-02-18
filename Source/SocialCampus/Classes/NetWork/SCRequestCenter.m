@@ -17,6 +17,8 @@
  */
 @property(strong, nonatomic) NSMutableDictionary *requestStatus;
 
+@property(strong, nonatomic) dispatch_queue_t concurrentQueue;
+
 
 @end
 
@@ -39,44 +41,44 @@
        RequestFinishBlock:(RequestFinishBlock)requestFinishBlock
        RequestCreateBlock:(RequestCreateBlock)requestCreateBlock
 {
-    
-    BOOL fistRequest = NO;
-    
     //Url 做空处理
     if([url isEqual:nil]){
         requestFinishBlock(nil,nil,nil);
     }
     
-    
-    if(!self.requestStatus[url]){
-        self.requestStatus[url] = [[NSMutableArray alloc] init];
-        fistRequest = YES;
-    }
-    
-    NSMutableArray *requestArray = self.requestStatus[url];
-    NSMutableDictionary *requestContent = [[NSMutableDictionary alloc] init];
-    if (requestProgressBlock) {
-        requestContent[@"requestProgress"] = [requestProgressBlock copy];
-    }
-    if (requestFinishBlock) {
-        requestContent[@"requestFinish"] = [requestFinishBlock copy];
-    }
-    
-    BOOL isContain = NO;
-    
-    for (NSMutableDictionary *content in requestArray) {
-        if ([content[@"requestProgress"] isEqual:requestProgressBlock]||[content[@"requestFinish"] isEqual:requestFinishBlock]){
-            isContain = YES;
-        }
-    }
-    if (!isContain) {
-        [requestArray addObject:requestContent];
-        self.requestStatus[url] = requestArray;
+    //设置屏障，读写操作保持一致性
+    dispatch_barrier_sync(self.concurrentQueue, ^{
+        BOOL fistRequest = NO;
         
-        if (fistRequest) {
-            requestCreateBlock();
+        if(!self.requestStatus[url]){
+            self.requestStatus[url] = [[NSMutableArray alloc] init];
+            fistRequest = YES;
         }
-    }
+        NSMutableArray *requestArray = self.requestStatus[url];
+        NSMutableDictionary *requestContent = [[NSMutableDictionary alloc] init];
+        if (requestProgressBlock) {
+            requestContent[@"requestProgress"] = [requestProgressBlock copy];
+        }
+        if (requestFinishBlock) {
+            requestContent[@"requestFinish"] = [requestFinishBlock copy];
+        }
+        
+        BOOL isContain = NO;
+        
+        for (NSMutableDictionary *content in requestArray) {
+            if ([content[@"requestProgress"] isEqual:requestProgressBlock]||[content[@"requestFinish"] isEqual:requestFinishBlock]){
+                isContain = YES;
+            }
+        }
+        if (!isContain) {
+            [requestArray addObject:requestContent];
+            self.requestStatus[url] = requestArray;
+            
+            if (fistRequest) {
+                requestCreateBlock();
+            }
+        }
+    });
     
 }
 

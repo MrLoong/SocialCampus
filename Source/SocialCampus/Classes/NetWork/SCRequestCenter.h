@@ -45,5 +45,19 @@ typedef void(^RequestFinishBlock)(NSData *data,NSError *error,BOOL finished);
 +(instancetype)shareInstance;
 
 
+/**
+ 添加请求
+
+ @param url url
+ @param requestProgressBlock RequestProgressBlock
+ @param requestFinishBlock RequestFinishBlock
+ @param requestCreateBlock RequestCreateBlock
+ */
+- (void)addRequestWithURL:(NSURL *)url
+     RequestProgressBlock:(RequestProgressBlock)requestProgressBlock
+       RequestFinishBlock:(RequestFinishBlock)requestFinishBlock
+       RequestCreateBlock:(RequestCreateBlock)requestCreateBlock;
+
+
 
 @end
