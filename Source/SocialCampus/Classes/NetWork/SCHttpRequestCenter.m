@@ -47,7 +47,7 @@
         requestFinishBlock(nil,nil,nil);
     }
     
-    //设置屏障，读写操作保持一致性
+    //设置屏障，读写操作保持一致性。
     dispatch_barrier_sync(self.concurrentQueue, ^{
         BOOL fistRequest = NO;
         
