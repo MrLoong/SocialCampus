@@ -89,7 +89,7 @@
    RequestCreateBlock:(RequestCreateBlock)requestCreateBlock
 {
     
-    //请求添加，如果未发现有创建，则进行请求创建
+    //请求添加，如果未发现有创建，则进行请求创建。
     [self addRequestWithURL:URL RequestProgressBlock:requestProgressBlock RequestFinishBlock:requestFinishBlock
          RequestCreateBlock:^{
              
