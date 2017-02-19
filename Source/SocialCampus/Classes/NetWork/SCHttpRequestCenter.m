@@ -36,7 +36,7 @@
 }
 
 
-//虽然满足了不同处对同一URL都做相同相应，但是同一处的连续请求却没有处理，导致连续添加（暂时采用循环遍历的形式满足）
+//虽然满足了不同处对同一URL都做相同相应，但是同一处的连续请求却没有处理，导致连续添加（暂时采用循环遍历的形式满足）。
 - (void)addRequestWithURL:(NSURL *)url
      RequestProgressBlock:(RequestProgressBlock)requestProgressBlock
        RequestFinishBlock:(RequestFinishBlock)requestFinishBlock
