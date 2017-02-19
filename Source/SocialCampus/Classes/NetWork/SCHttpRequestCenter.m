@@ -42,7 +42,7 @@
        RequestFinishBlock:(RequestFinishBlock)requestFinishBlock
        RequestCreateBlock:(RequestCreateBlock)requestCreateBlock
 {
-    //Url 做空处理
+    //Url 做空处理。
     if([url isEqual:nil]){
         requestFinishBlock(nil,nil,nil);
     }
