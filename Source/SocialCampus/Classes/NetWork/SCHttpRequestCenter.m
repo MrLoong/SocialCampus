@@ -6,10 +6,11 @@
 //  Copyright © 2017年 lastday. All rights reserved.
 //
 
-#import "SCRequestCenter.h"
+#import "SCHttpRequestCenter.h"
+#import "SCHttpRequestOperation.h"
 
 
-@interface SCRequestCenter()
+@interface SCHttpRequestCenter()
 
 
 /**
@@ -22,14 +23,14 @@
 
 @end
 
-@implementation SCRequestCenter
+@implementation SCHttpRequestCenter
 
 + (instancetype)shareInstance
 {
-    static SCRequestCenter *shareInstance = nil;
+    static SCHttpRequestCenter *shareInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        shareInstance = [[SCRequestCenter alloc] init];
+        shareInstance = [[SCHttpRequestCenter alloc] init];
     });
     return shareInstance;
 }
@@ -81,6 +82,21 @@
     });
     
 }
+
+-(void)requestWithURL:(NSURL *)URL
+ RequestProgressBlock:(RequestProgressBlock)requestProgressBlock
+   RequestFinishBlock:(RequestFinishBlock)requestFinishBlock
+   RequestCreateBlock:(RequestCreateBlock)requestCreateBlock
+{
+    
+    //请求添加，如果未发现有创建，则进行请求创建
+    [self addRequestWithURL:URL RequestProgressBlock:requestProgressBlock RequestFinishBlock:requestFinishBlock
+         RequestCreateBlock:^{
+             
+             
+    }];
+}
+
 
 
 

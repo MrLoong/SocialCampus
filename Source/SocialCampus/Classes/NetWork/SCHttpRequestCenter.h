@@ -10,6 +10,18 @@
 
 
 #pragma mark - 请求状态block
+
+/**
+ 无参数block,用于创建请求
+ */
+typedef void(^RequestCreateBlock)();
+
+/**
+ 无参数block,用于进行取消
+ */
+typedef void(^RequestCancelBlock)();
+
+
 /**
  请求进度
 
@@ -17,12 +29,6 @@
  @param expectedContentLength 未接受数据
  */
 typedef void(^RequestProgressBlock)(NSInteger alreadyReciveSize,NSInteger expectedContentLength);
-
-
-/**
-无参数block,用于创建
- */
-typedef void(^RequestCreateBlock)();
 
 
 /**
@@ -35,7 +41,10 @@ typedef void(^RequestCreateBlock)();
 typedef void(^RequestFinishBlock)(NSData *data,NSError *error,BOOL finished);
 
 
-@interface SCRequestCenter : NSObject
+
+
+
+@interface SCHttpRequestCenter : NSObject
 
 /**
  单例

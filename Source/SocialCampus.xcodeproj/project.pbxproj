@@ -34,7 +34,7 @@
 		6C95839C1DBF5DE7007C4298 /* user_password.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C95839B1DBF5DE7007C4298 /* user_password.png */; };
 		6C9583A01DC1E8F9007C4298 /* UIView+ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C95839F1DC1E8F8007C4298 /* UIView+ViewUtils.m */; };
 		6CA3304A1DDC4A11000B0218 /* SCServiceTerminal.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA330491DDC4A11000B0218 /* SCServiceTerminal.m */; };
-		C0733B161E5593D9002BABFB /* SCRequestCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C0733B151E5593D9002BABFB /* SCRequestCenter.m */; };
+		C0733B161E5593D9002BABFB /* SCHttpRequestCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C0733B151E5593D9002BABFB /* SCHttpRequestCenter.m */; };
 		C0826A3F1E558CAB002F01FE /* SCHttpRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C0826A3E1E558CAB002F01FE /* SCHttpRequestOperation.m */; };
 		FC2B74161DB7969900708EFB /* SCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2B74151DB7969900708EFB /* SCLoginViewController.m */; };
 		FC5F28E51DB74E9000F58267 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5F28E41DB74E9000F58267 /* main.m */; };
@@ -112,8 +112,8 @@
 		6CA330481DDC4A11000B0218 /* SCServiceTerminal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCServiceTerminal.h; path = Classes/ServiceDistribution/Request/SCServiceTerminal.h; sourceTree = "<group>"; };
 		6CA330491DDC4A11000B0218 /* SCServiceTerminal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCServiceTerminal.m; path = Classes/ServiceDistribution/Request/SCServiceTerminal.m; sourceTree = "<group>"; };
 		6CA3304B1DDC4E1D000B0218 /* SCServiceCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SCServiceCommand.h; path = Classes/ServiceDistribution/Request/SCServiceCommand.h; sourceTree = "<group>"; };
-		C0733B141E5593D9002BABFB /* SCRequestCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCRequestCenter.h; path = Classes/NetWork/SCRequestCenter.h; sourceTree = "<group>"; };
-		C0733B151E5593D9002BABFB /* SCRequestCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCRequestCenter.m; path = Classes/NetWork/SCRequestCenter.m; sourceTree = "<group>"; };
+		C0733B141E5593D9002BABFB /* SCHttpRequestCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHttpRequestCenter.h; path = Classes/NetWork/SCHttpRequestCenter.h; sourceTree = "<group>"; };
+		C0733B151E5593D9002BABFB /* SCHttpRequestCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHttpRequestCenter.m; path = Classes/NetWork/SCHttpRequestCenter.m; sourceTree = "<group>"; };
 		C0826A3D1E558CAB002F01FE /* SCHttpRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHttpRequestOperation.h; path = Classes/NetWork/SCHttpRequestOperation.h; sourceTree = "<group>"; };
 		C0826A3E1E558CAB002F01FE /* SCHttpRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHttpRequestOperation.m; path = Classes/NetWork/SCHttpRequestOperation.m; sourceTree = "<group>"; };
 		C9E6BB3CF4F9A60D991DAC58 /* Pods-SocialCampus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialCampus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialCampus/Pods-SocialCampus.debug.xcconfig"; sourceTree = "<group>"; };
@@ -240,8 +240,8 @@
 				6C6963161E0164A6001C5CB4 /* SCHttpRequest.m */,
 				C0826A3D1E558CAB002F01FE /* SCHttpRequestOperation.h */,
 				C0826A3E1E558CAB002F01FE /* SCHttpRequestOperation.m */,
-				C0733B141E5593D9002BABFB /* SCRequestCenter.h */,
-				C0733B151E5593D9002BABFB /* SCRequestCenter.m */,
+				C0733B141E5593D9002BABFB /* SCHttpRequestCenter.h */,
+				C0733B151E5593D9002BABFB /* SCHttpRequestCenter.m */,
 			);
 			name = NetWork;
 			sourceTree = "<group>";
@@ -698,7 +698,7 @@
 				6C69631C1E016C06001C5CB4 /* SCNetworkPortal.m in Sources */,
 				FC5F28E81DB74E9000F58267 /* AppDelegate.m in Sources */,
 				6C3B90B71DD46399000E01B8 /* SCMessageFactory.m in Sources */,
-				C0733B161E5593D9002BABFB /* SCRequestCenter.m in Sources */,
+				C0733B161E5593D9002BABFB /* SCHttpRequestCenter.m in Sources */,
 				FC5F28E51DB74E9000F58267 /* main.m in Sources */,
 				6C10E1A81DD1E5E300922C11 /* SCServiceSelector.m in Sources */,
 				6C613FE31DCF01B200E9C93F /* SCServiceMessage.m in Sources */,
