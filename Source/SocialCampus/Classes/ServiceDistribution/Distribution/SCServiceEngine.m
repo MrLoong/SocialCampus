@@ -15,7 +15,7 @@
 @interface SCServiceEngine()
 
 /**
- *  发送SCServiceMessage
+ *  发送SCServiceMessage， 请求发送
  *
  *  @param serviceMessage SCServiceMessage
  *
