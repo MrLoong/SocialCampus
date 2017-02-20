@@ -14,7 +14,7 @@
 
 
 /**
- 请求状态，描述所有的请求的状态变化
+ 请求状态，描述所有的请求的状态变化.
  */
 @property(strong, nonatomic) NSMutableDictionary *requestStatus;
 
