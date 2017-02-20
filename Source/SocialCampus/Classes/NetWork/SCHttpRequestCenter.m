@@ -89,11 +89,20 @@
    RequestCreateBlock:(RequestCreateBlock)requestCreateBlock
 {
     
+    __block SCHttpRequestOperation *requestOperation;
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:URL cachePolicy: NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10];
+    
     //请求添加，如果未发现有创建，则进行请求创建。
     [self addRequestWithURL:URL RequestProgressBlock:requestProgressBlock RequestFinishBlock:requestFinishBlock
          RequestCreateBlock:^{
-             
-             
+            requestOperation = [[SCHttpRequestOperation alloc] initWithRequest:request
+                                                          RequestProgressBlock:^(NSInteger alreadyReciveSize, NSInteger expectedContentLength) {
+                                                              
+                                                          } RequestFinishBlock:^(NSData *data, NSError *error, BOOL finished) {
+                                                              
+                                                          } RequestCancelBlock:^{
+                                                              
+                                                          }];
     }];
 }
 
