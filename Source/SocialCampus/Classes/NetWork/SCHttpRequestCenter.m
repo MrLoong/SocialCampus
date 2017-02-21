@@ -88,12 +88,40 @@
    RequestFinishBlock:(RequestFinishBlock)requestFinishBlock
    RequestCreateBlock:(RequestCreateBlock)requestCreateBlock
 {
-    
+    __block SCHttpRequestOperation *operation;
+    __weak __typeof(self)myself = self;
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:URL cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10];
     //请求添加，如果未发现有创建，则进行请求创建。
-    [self addRequestWithURL:URL RequestProgressBlock:requestProgressBlock RequestFinishBlock:requestFinishBlock
+    [self addRequestWithURL:URL
+       RequestProgressBlock:requestProgressBlock
+         RequestFinishBlock:requestFinishBlock
          RequestCreateBlock:^{
-             
-             
+             operation = [[SCHttpRequestOperation alloc] initWithRequest:request RequestProgressBlock:^(NSInteger alreadyReciveSize, NSInteger expectedContentLength){
+                 __block NSArray *requestArray;
+                 dispatch_sync(self.concurrentQueue,^{
+                     requestArray = [myself.requestStatus[URL] copy];
+                 });
+                 for (NSDictionary *requestContent in requestArray) {
+                     dispatch_async(dispatch_get_main_queue(), ^{
+                         
+                         RequestProgressBlock progressBlock = requestContent[@"requestProgress"];
+                         
+                         if (progressBlock) {
+                             progressBlock(alreadyReciveSize,expectedContentLength);
+                         }
+                     });
+                 }
+             } RequestFinishBlock:^(NSData *data, NSError *error, BOOL finished) {
+                 __block NSArray *requestArray;
+                 dispatch_barrier_sync(self.concurrentQueue,^{
+                     requestArray = [myself.requestStatus[URL] copy];
+                     if (finished) {
+                         
+                     }
+                 });
+             } RequestCancelBlock:^{
+                 
+             }];
     }];
 }
 
