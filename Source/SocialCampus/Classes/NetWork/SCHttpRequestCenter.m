@@ -91,7 +91,7 @@
     __block SCHttpRequestOperation *operation;
     __weak __typeof(self)myself = self;
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:URL cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10];
-    //请求添加，如果未发现有创建，则进行请求创建。
+    //请求添加，如果未发现有创建，则进行请求创建
     [self addRequestWithURL:URL
        RequestProgressBlock:requestProgressBlock
          RequestFinishBlock:requestFinishBlock
