@@ -10,7 +10,7 @@
 #import "SCServiceMessage.h"
 #import "SCNetworkPortal.h"
 
-@interface SCAccountService()
+@interface SCAccountService()<SCNetworkPortalDelegate>
 
 
 @end
@@ -43,6 +43,15 @@
                            failure:^(NSError *error){
                                
                            }];
+}
+
+
+#pragma mark - SCNetworkPortalDelegate
+
+-(void)finishRequestWithSM:(SCServiceMessage *)sm{
+    
+    [super finishRequestWithSM:sm];
+
 }
 
 

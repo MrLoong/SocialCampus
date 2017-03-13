@@ -21,7 +21,7 @@
     UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     window.backgroundColor = [UIColor whiteColor];
     self.window = window;
-    self.mainWindowManager = [[SCMainWindowManager alloc] initWithWindow:window];
+    self.mainWindowManager = [[SCMainWindowManager alloc] initWithWindow:self.window];
     [self.mainWindowManager generateUI];
     [self.window makeKeyAndVisible];
 }
