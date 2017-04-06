@@ -87,11 +87,11 @@
 
 
 - (void)onXYLoginClick{
-//    SCMobileViewController *mobileViewController = [[SCMobileViewController alloc] init];
-//    SCNavigationController *navigationController = [[SCNavigationController alloc] initWithRootViewController:mobileViewController];
-//    [self presentViewController:navigationController animated:YES completion:nil];
+    SCMobileViewController *mobileViewController = [[SCMobileViewController alloc] init];
+    SCNavigationController *navigationController = [[SCNavigationController alloc] initWithRootViewController:mobileViewController];
+    [self presentViewController:navigationController animated:YES completion:nil];
     
-    [SCServiceTerminal requestServiceWihtAssemblyMethod:LoginVerification parameters:NULL Responder:self];
+//    [SCServiceTerminal requestServiceWihtAssemblyMethod:LoginVerification parameters:NULL Responder:self];
 }
 
 - (void)configureBgImage{
